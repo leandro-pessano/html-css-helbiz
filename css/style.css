@@ -1,0 +1,248 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Top*/
+.header-top {
+  height: 80px;
+  line-height: 80px;
+}
+
+.header-top .logo {
+  vertical-align: middle;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.navbar ul li a {
+  color: #343434;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.lang-bar ul li:not(:last-child) a {
+  padding-right: 5px;
+  border-right: 1px solid black;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+.jumbotron .testo {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: 100%;
+}
+
+.jumbotron .testo p {
+  margin: 10px 0;
+}
+
+/* Products */
+#products [class*="col-"] {
+  padding: 30px 15px;
+}
+
+#products .product {
+  padding: 30px 0;
+  background-color: #FAFAFA;
+  text-align: center;
+}
+
+#products .product div {
+  margin: 10px 0;
+}
+
+#products .product small a {
+  color: blue;
+}
+
+#products img {
+  display: block;
+  width: 100%;
+}
+
+/* Steps */
+#steps {
+  height: 300px;
+  background-color: lightblue;
+  margin-bottom: 30px;
+}
+
+/* Mobility */
+#mobility .container {
+  margin-bottom: 30px;
+  background-image: url(../img/scooter.f0a0397.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+}
+
+#mobility [class*="col-"] {
+  padding: 10% 2%;
+}
+
+#mobility h2 {
+  font-size: 250%;
+}
+
+#mobility p {
+  margin: 30px;
+}
+
+/* App */
+#app {
+  text-align: center;
+  color: white;
+  font-size: 120%;
+}
+
+#app h2 {
+  font-size: 250%;
+}
+
+#app .app {
+  background-image: linear-gradient(#405569, #252F38);
+  margin-right: 15px;
+  padding: 10% 2% 0 2%;
+}
+
+#app .app .phone {
+  height: 150px;
+  background-image: url(../img/iphone-bg.2dae1bd.png);
+  background-position: top;
+  background-size: cover
+}
+
+#app .app div,
+#app .find-us div {
+  margin: 30px;
+}
+
+#app .find-us {
+  background-image: url(../img/city.7c8c928.jpg);
+  background-size: cover;
+  margin-left: 15px;
+  padding: 10% 2% 0 2%;
+}
+
+#app .find-us .box {
+  height: 150px;
+}
+
+/* Footer */
+footer {
+  font-size: 70%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer .row{
+padding: 50px 0;
+border-bottom: 1px solid rgb(42, 42, 42);
+}
+
+footer h2 {
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+footer li {
+  line-height: 3;
+  color: lightgrey;
+}
+
+footer li:first-child {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer i {
+  font-size: 150%;
+  margin-left: 10px;
+}
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 992px){
+  #mobility,
+  #app {
+    font-size: 100%;
+  }
+
+  #mobility h2 ,
+  #app h2 {
+      padding: 0 30px;
+      font-size: 180%;
+    }
+
+  footer {
+    padding: 0 20px;
+  }
+
+  footer h2 {
+    font-size: 300%;
+    margin-bottom: 20px;
+  }
+
+  footer ul {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .jumbotron {
+    font-size: 80%;
+  }
+
+  .jumbotron img {
+    height: calc(54px / 100 * 80)
+  }
+
+  #products [class*="col-"] {
+    padding: 60px 50px;
+  }
+
+  #mobility ,
+  #app {
+    padding: 0 60px;
+  }
+
+  #mobility .container {
+    background-position: right;
+  }
+
+  #app .app {
+    margin-right: 0;
+  }
+
+  #app .find-us {
+    margin-left: 0;
+  }
+}
